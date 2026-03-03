@@ -1,0 +1,4 @@
+.vercel
+.DS_Store
+clips/*
+!clips/banner_gameplay.mp4
