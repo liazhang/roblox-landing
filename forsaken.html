@@ -348,6 +348,8 @@
       border-radius: 12px;
       overflow: hidden;
       transition: transform 0.2s;
+      text-decoration: none;
+      position: relative;
     }
     .clip-thumb:hover {
       transform: scale(1.05);
@@ -358,7 +360,27 @@
       object-fit: cover;
       display: block;
     }
-    .clip-thumb span {
+    .clip-badge {
+      position: absolute;
+      bottom: 36px;
+      left: 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      opacity: 0.8;
+    }
+    .clip-badge img {
+      width: 22px;
+      height: 22px;
+      object-fit: contain;
+    }
+    .clip-badge span {
+      font-size: 11px;
+      font-weight: 600;
+      color: #ffffff;
+      letter-spacing: 0.02em;
+    }
+    .clip-thumb .clip-title {
       display: block;
       text-align: center;
       font-size: 12px;
@@ -499,7 +521,7 @@
     <div class="hero-bg"></div>
     <div class="hero-content">
       <div class="pill"><span class="pill-dot"></span> Medal × Forsaken</div>
-      <h1>Turn every kill into a <span>viral clip</span></h1>
+      <h1 style="white-space: nowrap;">Turn every kill into a <span>viral clip</span></h1>
       <p class="subtitle" style="color: #ffffff; font-weight: 500;">Medal makes it effortless for Forsaken players to clip, share, and spread your game across TikTok, Discord, YouTube, and X</p>
       <a href="mailto:lia@medal.tv" class="btn-primary">Get Started &rarr;</a>
     </div>
@@ -508,15 +530,15 @@
   <!-- ═══ FORSAKEN CLIPS CAROUSEL ═══ -->
   <section class="clips-section">
     <div class="clips-track">
-      <div class="clip-thumb"><video autoplay muted loop playsinline data-start="4" data-end="8"><source src="clips/forsaken/clip1.mp4" type="video/mp4"></video><span>Forsaken chicken duo</span></div>
-      <div class="clip-thumb"><video autoplay muted loop playsinline data-start="4" data-end="8"><source src="clips/forsaken/clip2.mp4" type="video/mp4"></video><span>forsaken roblox yaya</span></div>
-      <div class="clip-thumb"><video autoplay muted loop playsinline data-start="4" data-end="8"><source src="clips/forsaken/clip3.mp4" type="video/mp4"></video><span>genuine terror</span></div>
-      <div class="clip-thumb"><video autoplay muted loop playsinline data-start="4" data-end="8"><source src="clips/forsaken/clip4.mp4" type="video/mp4"></video><span>Asistencia al killer</span></div>
+      <a class="clip-thumb" href="https://medal.tv/games/roblox/clips/ltdvRfLy4e-gEYdPA" target="_blank"><video autoplay muted loop playsinline data-start="4" data-end="8"><source src="clips/forsaken/clip1.mp4" type="video/mp4"></video><div class="clip-badge"><img src="sticker_f8.png" alt="Medal"><span>clipped with Medal</span></div><span class="clip-title">Forsaken chicken duo</span></a>
+      <a class="clip-thumb" href="https://medal.tv/games/roblox/clips/lhoppHTFGUbOuJBJC" target="_blank"><video autoplay muted loop playsinline data-start="4" data-end="8"><source src="clips/forsaken/clip2.mp4" type="video/mp4"></video><div class="clip-badge"><img src="sticker_f8.png" alt="Medal"><span>clipped with Medal</span></div><span class="clip-title">forsaken roblox yaya</span></a>
+      <a class="clip-thumb" href="https://medal.tv/games/roblox/clips/lq708la70ni5RnJ8u" target="_blank"><video autoplay muted loop playsinline data-start="4" data-end="8"><source src="clips/forsaken/clip3.mp4" type="video/mp4"></video><div class="clip-badge"><img src="sticker_f8.png" alt="Medal"><span>clipped with Medal</span></div><span class="clip-title">genuine terror</span></a>
+      <a class="clip-thumb" href="https://medal.tv/games/roblox/clips/lEbGdZk2XvWEFeljO" target="_blank"><video autoplay muted loop playsinline data-start="4" data-end="8"><source src="clips/forsaken/clip4.mp4" type="video/mp4"></video><div class="clip-badge"><img src="sticker_f8.png" alt="Medal"><span>clipped with Medal</span></div><span class="clip-title">Asistencia al killer</span></a>
       <!-- duplicate for seamless loop -->
-      <div class="clip-thumb"><video autoplay muted loop playsinline data-start="4" data-end="8"><source src="clips/forsaken/clip1.mp4" type="video/mp4"></video><span>Forsaken chicken duo</span></div>
-      <div class="clip-thumb"><video autoplay muted loop playsinline data-start="4" data-end="8"><source src="clips/forsaken/clip2.mp4" type="video/mp4"></video><span>forsaken roblox yaya</span></div>
-      <div class="clip-thumb"><video autoplay muted loop playsinline data-start="4" data-end="8"><source src="clips/forsaken/clip3.mp4" type="video/mp4"></video><span>genuine terror</span></div>
-      <div class="clip-thumb"><video autoplay muted loop playsinline data-start="4" data-end="8"><source src="clips/forsaken/clip4.mp4" type="video/mp4"></video><span>Asistencia al killer</span></div>
+      <a class="clip-thumb" href="https://medal.tv/games/roblox/clips/ltdvRfLy4e-gEYdPA" target="_blank"><video autoplay muted loop playsinline data-start="4" data-end="8"><source src="clips/forsaken/clip1.mp4" type="video/mp4"></video><div class="clip-badge"><img src="sticker_f8.png" alt="Medal"><span>clipped with Medal</span></div><span class="clip-title">Forsaken chicken duo</span></a>
+      <a class="clip-thumb" href="https://medal.tv/games/roblox/clips/lhoppHTFGUbOuJBJC" target="_blank"><video autoplay muted loop playsinline data-start="4" data-end="8"><source src="clips/forsaken/clip2.mp4" type="video/mp4"></video><div class="clip-badge"><img src="sticker_f8.png" alt="Medal"><span>clipped with Medal</span></div><span class="clip-title">forsaken roblox yaya</span></a>
+      <a class="clip-thumb" href="https://medal.tv/games/roblox/clips/lq708la70ni5RnJ8u" target="_blank"><video autoplay muted loop playsinline data-start="4" data-end="8"><source src="clips/forsaken/clip3.mp4" type="video/mp4"></video><div class="clip-badge"><img src="sticker_f8.png" alt="Medal"><span>clipped with Medal</span></div><span class="clip-title">genuine terror</span></a>
+      <a class="clip-thumb" href="https://medal.tv/games/roblox/clips/lEbGdZk2XvWEFeljO" target="_blank"><video autoplay muted loop playsinline data-start="4" data-end="8"><source src="clips/forsaken/clip4.mp4" type="video/mp4"></video><div class="clip-badge"><img src="sticker_f8.png" alt="Medal"><span>clipped with Medal</span></div><span class="clip-title">Asistencia al killer</span></a>
     </div>
   </section>
 
